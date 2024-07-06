@@ -11,6 +11,9 @@
 {%- if grains['oscodename'] == "focal" %}
   {% set os_rel = '20.04.3' %}
   {% set hash = '2d98e442c4a2a9a59bda10729eb8aac31444f5fedb58fcc65d23d415e03e7c2f' %}
+{% elif grains['oscodename'] == "jammy" %}
+   {% set os_rel = '22.04' %}
+  {% set hash = '2d98e442c4a2a9a59bda10729eb8aac31444f5fedb58fcc65d23d415e03e7c2f' %}
 {% elif grains['oscodename'] == "bionic" %}
   Ubuntu Bionic is no longer supported:
     test.nop
