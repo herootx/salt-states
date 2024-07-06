@@ -15,6 +15,11 @@ Ubuntu Bionic is no longer supported:
   {%- set hash="bf6821faf6669e07057478edf22c0e02351e7922494dbff377f216920235d8b7" %}
   {%- set wheel="stpyv8-" + version + "-cp38-cp38-linux_x86_64.whl" %}
   {%- set folder="stpyv8-ubuntu-20.04-3.8" %}
+{% elif grains['oscodename'] == "jammy" %} 
+  {%- set release="stpyv8-ubuntu-22.04-python-3.8.zip" %}
+  {%- set hash="bf6821faf6669e07057478edf22c0e02351e7922494dbff377f216920235d8b7" %}
+  {%- set wheel="stpyv8-" + version + "-cp38-cp38-linux_x86_64.whl" %}
+  {%- set folder="stpyv8-ubuntu-22.04-3.8" %}
 {%- endif %}
 
 include:
