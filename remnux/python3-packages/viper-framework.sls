@@ -58,7 +58,7 @@ remnux-python3-packages-viper-virtualenv:
 remnux-python3-packages-viper-install:
   pip.installed:
     - name: viper-framework
-    - bin_env: /opt/viper/bin/python3
+    - bin_env: /opt/viper/bin/python
     - require:
       - sls: remnux.packages.libssl-dev
       - sls: remnux.packages.swig
