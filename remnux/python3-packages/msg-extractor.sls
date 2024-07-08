@@ -33,7 +33,7 @@ remnux-python3-packages-extract-msg-virtualenv:
 remnux-python3-packages-extract-msg:
   pip.installed:
     - name: extract_msg
-    - bin_env: /opt/extract-msg/bin/python3
+    - bin_env: /opt/extract-msg/bin/python
     - require:
       - sls: remnux.python3-packages.pip
       - sls: remnux.packages.tzdata
