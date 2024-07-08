@@ -13,7 +13,7 @@ nodejs-repo-cleanup:
 nodejs-repo:
   pkgrepo.managed:
     - humanname: nodejs
-    - name: deb [signed-by=/usr/share/keyrings/NODESOURCE-GPG.KEY] http://deb.nodesource.com/node_14.x {{ grains['lsb_distrib_codename'] }} main
+    - name: deb [signed-by=/usr/share/keyrings/NODESOURCE-GPG.KEY] http://deb.nodesource.com/node_20.x {{ grains['lsb_distrib_codename'] }} main
     - file: /etc/apt/sources.list.d/nodesource.list
     - refresh: True
     - clean_file: True
