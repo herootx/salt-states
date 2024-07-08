@@ -10,7 +10,7 @@
 {% elif grains['oscodename'] == "bionic" %}
   {% set python = "python3.6" %}
 {% elif grains['oscodename'] == "jammy" %}
-  {% set python = "python3.8" %}
+  {% set python = "python3.10" %}
 {% endif %}
 
 include:
