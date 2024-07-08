@@ -34,7 +34,7 @@ remnux-python3-packages-speakeasy-virtualenv:
 
 remnux-python3-packages-speakeasy:
   pip.installed:
-    - bin_env: /opt/speakeasy/bin/python3
+    - bin_env: /opt/speakeasy/bin/python
     - name: speakeasy-emulator
     - branch: master
     - upgrade: True
@@ -55,7 +55,7 @@ remnux-python3-packages-speakeasy-emuexe:
 remnux-python3-packages-speakeasy-emuexe-shebang:
   file.prepend:
     - name: /opt/speakeasy/bin/emu_exe.py
-    - text: '#!/opt/speakeasy/bin/python3'
+    - text: '#!/opt/speakeasy/bin/python'
     - require:
       - file: remnux-python3-packages-speakeasy-emuexe
 
@@ -72,7 +72,7 @@ remnux-python3-packages-speakeasy-emudll:
 remnux-python3-packages-speakeasy-emudll-shebang:
   file.prepend:
     - name: /opt/speakeasy/bin/emu_dll.py
-    - text: '#!/opt/speakeasy/bin/python3'
+    - text: '#!/opt/speakeasy/bin/python'
     - require:
       - file: remnux-python3-packages-speakeasy-emuexe
 
