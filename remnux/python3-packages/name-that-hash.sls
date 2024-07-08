@@ -31,7 +31,7 @@ remnux-python3-packages-name-that-hash-virtualenv:
 remnux-python3-packages-name-that-hash-install:
   pip.installed:
     - name: name-that-hash
-    - bin_env: /opt/nth/bin/python3
+    - bin_env: /opt/nth/bin/python
     - upgrade: True
     - require:
       - virtualenv: remnux-python3-packages-name-that-hash-virtualenv
