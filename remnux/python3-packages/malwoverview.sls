@@ -45,7 +45,7 @@ remnux-python3-packages-malwoverview-virtualenv:
 remnux-python3-packages-malwoverview-install:
   pip.installed:
     - name: malwoverview
-    - bin_env: /opt/malwoverview/bin/python3
+    - bin_env: /opt/malwoverview/bin/python
     - upgrade: True
     - user: root
     - require:
