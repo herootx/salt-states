@@ -34,7 +34,7 @@ remnux-python3-packages-qiling-virtualenv:
 remnux-python3-packages-qiling:
   pip.installed:
     - name: qiling
-    - bin_env: /opt/qiling/bin/python3
+    - bin_env: /opt/qiling/bin/python
     - upgrade: True
     - require:
       - virtualenv: remnux-python3-packages-qiling-virtualenv
