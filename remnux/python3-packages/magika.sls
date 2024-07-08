@@ -25,7 +25,7 @@ remnux-python3-packages-magika-venv:
 remnux-python3-packages-magika-install:
   pip.installed:
     - name: magika
-    - bin_env: /opt/magika/bin/python3
+    - bin_env: /opt/magika/bin/python
     - upgrade: True
     - require:
       - sls: remnux.packages.python3-pip
