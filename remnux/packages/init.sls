@@ -181,7 +181,7 @@ remnux-packages:
       - sls: remnux.packages.docker
       - sls: remnux.packages.dos2unix
       - sls: remnux.packages.epic5
-      - sls: remnux.packages.exfat-utils
+      - sls: remnux.packages.exfatprogs
       - sls: remnux.packages.feh
       - sls: remnux.packages.firefox
       - sls: remnux.packages.flex
