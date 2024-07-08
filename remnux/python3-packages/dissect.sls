@@ -45,7 +45,7 @@ remnux-python3-packages-dissect-install:
       - dissect
       - maxminddb
       - acquire
-    - bin_env: /opt/dissect/bin/python3
+    - bin_env: /opt/dissect/bin/python
     - upgrade: True
     - user: root
     - require:
