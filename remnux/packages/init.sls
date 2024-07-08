@@ -15,7 +15,7 @@ include:
   - remnux.packages.docker
   - remnux.packages.dos2unix
   - remnux.packages.epic5
-  - remnux.packages.exfat-utils
+  - remnux.packages.exfatprogs
   - remnux.packages.feh
   - remnux.packages.firefox
   - remnux.packages.flex
