@@ -51,7 +51,7 @@ include:
 remnux-python3-packages-remove-thug:
   pip.removed:
     - name: thug
-    - bin_env: /usr/bin/python3
+    - bin_env: /usr/bin/python3.10
 
 remnux-python3-packages-thug-virtualenv:
   virtualenv.managed:
