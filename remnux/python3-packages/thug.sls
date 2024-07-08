@@ -87,7 +87,7 @@ remnux-python3-packages-thug-venv-stpyv8-archive:
 remnux-python3-packages-thug-venv-stpyv8-pip:
   pip.installed:
     - name: /usr/local/src/remnux/{{ folder }}/{{ wheel }}
-    - bin_env: /opt/thug/bin/python3
+    - bin_env: /opt/thug/local/bin/python3
     - require:
       - sls: remnux.python3-packages.pip
       - sls: remnux.packages.sudo
@@ -113,7 +113,7 @@ remnux-python3-packages-thug-git:
 remnux-python3-packages-thug-packages:
   pip.installed:
     - name: thug
-    - bin_env: /opt/thug/bin/python3
+    - bin_env: /opt/thug/local/bin/python3
     - upgrade: True
     - require:
       - sls: remnux.python3-packages.pip
